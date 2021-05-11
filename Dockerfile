@@ -1,10 +1,9 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 
-LABEL "com.github.actions.name"="dotnet lambda deploy"
-LABEL "com.github.actions.description"="Run dotnet lambda deploy"
+LABEL "com.github.actions.name"="Lambda deployment"
+LABEL "com.github.actions.description"="Deploy lambda to s3"
 LABEL "com.github.actions.icon"="play-circle"
 LABEL "com.github.actions.color"="purple"
-
 LABEL "maintainer"="David B, CH <support@resqme.io>"
 
 RUN apt-get update && \
